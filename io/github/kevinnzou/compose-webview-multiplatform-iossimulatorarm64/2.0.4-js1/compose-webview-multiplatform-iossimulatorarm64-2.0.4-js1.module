@@ -1,0 +1,269 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../compose-webview-multiplatform/2.0.4-js1/compose-webview-multiplatform-2.0.4-js1.module",
+    "group": "io.github.kevinnzou",
+    "module": "compose-webview-multiplatform",
+    "version": "2.0.4-js1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "kermit",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webview-iosSimulatorArm64Main.klib",
+          "url": "compose-webview-multiplatform-iossimulatorarm64-2.0.4-js1.klib",
+          "size": 204615,
+          "sha512": "ada73dc7aa0a571d127747c5c49eee627be54cc86a6463fc84670a93821ad5ca9216105c7017068d891839bd437fe1792a4609750cbe2c918dcb9dfc5125dacb",
+          "sha256": "a398000f54d784bb6e7ace7e1b15c34d73b1c4aa477016fc8d4ab1cf1175e0cc",
+          "sha1": "6e21248875b120b747e8bd0b9dbe736616f785c6",
+          "md5": "c4d540f0516c8d8c98d4b24255e66f4a"
+        },
+        {
+          "name": "webview-iosSimulatorArm64Cinterop-observerMain.klib",
+          "url": "compose-webview-multiplatform-iossimulatorarm64-2.0.4-js1-cinterop-observer.klib",
+          "size": 6114,
+          "sha512": "ef67b7accf2c1483739ec0f1ff8d889fac593f6e27d38643e7dfe554ea91efb56a4d526f67c5b4114871705064d75a03b48ac5776c40c9a090c9ba96d466155a",
+          "sha256": "67695d43ece0a8340bb40f23a49c619df066576e691d7e1438aad29d321a375d",
+          "sha1": "69557cb947c8b10125728845d5fc0762d8def8be",
+          "md5": "0dd92aaa92d4b1f5796f92c032892d46"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "webview-iossimulatorarm64-sources.jar",
+          "url": "compose-webview-multiplatform-iossimulatorarm64-2.0.4-js1-sources.jar",
+          "size": 43906,
+          "sha512": "25859a232110d9df3280c6fe6eaf60784a3b8f3437f329a09c60e75cb2a7cd772d7e173f3a3f0912693ae161f9ce57418d94d19e6acb15f1ebf79c0b5f45906b",
+          "sha256": "7376ee614cfc077364f997d10daf840e64594f01be49e58cdf9b6575422a6a50",
+          "sha1": "bf0ea1b1fec9b5ec13b30041ddfa8c6f626f42e9",
+          "md5": "633fc79190b2b73e2fed407a0ed7c021"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "kermit",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webview.kotlin_resources.zip",
+          "url": "compose-webview-multiplatform-iossimulatorarm64-2.0.4-js1-kotlin_resources.kotlin_resources.zip",
+          "size": 362,
+          "sha512": "735ddaf521e370e81b244dd781006ac20e6386840aedd1c03d81e8dc1e6b97c9ca8caa6b47d0175e8b81a0a0d26d7c669a8b17ce4b4084ed34d270811594c161",
+          "sha256": "b3bca01da9c1c303094dc4f904282b760b96dc005e9fed049402e8646daa903a",
+          "sha1": "0fb997012a363c71aa791ef4b953da1f88e1c324",
+          "md5": "bd5475ef71db9a18c07223c1d048fa35"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "kermit",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webview-iossimulatorarm64-metadata.jar",
+          "url": "compose-webview-multiplatform-iossimulatorarm64-2.0.4-js1-metadata.jar",
+          "size": 18831,
+          "sha512": "5cc79ecbd5938c855d4f160bb0e09199045f5f38efb131d7fdf9799891258cfc73e7358582ee45a04b605c9144832c5fba7c9f632a1bfd464fa413a0fb8e18c0",
+          "sha256": "2ca52caf312458be900407697bf4c06c059f203c0b49c656a630af02b8c8ec8f",
+          "sha1": "ebd0d20cfe7c5d8353bd51d679f790fa69bc3b06",
+          "md5": "6ec75044cefcc4de87ca2a30673a56d0"
+        }
+      ]
+    }
+  ]
+}
