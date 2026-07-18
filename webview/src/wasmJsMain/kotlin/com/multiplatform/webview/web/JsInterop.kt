@@ -9,13 +9,13 @@ import org.w3c.dom.Element
     "(element) => { try { return element.contentWindow && element.contentWindow.history && " +
         "element.contentWindow.history.length > 1; } catch(e) { return false; } }",
 )
-external fun checkCanGoBackJs(element: Element): Boolean
+actual external fun checkCanGoBackJs(element: Element): Boolean
 
 /**
  * Check if navigation forward is possible (always returns false for iframes)
  */
 @JsFun("(element) => { try { return false; } catch(e) { return false; } }")
-external fun checkCanGoForwardJs(element: Element): Boolean
+actual external fun checkCanGoForwardJs(element: Element): Boolean
 
 /**
  * Navigate back in browser history
@@ -25,7 +25,7 @@ external fun checkCanGoForwardJs(element: Element): Boolean
         "element.contentWindow.history.back(); } } catch(e) { console.error('Error going back:', e);" +
         " } }",
 )
-external fun navigateBackJs(element: Element)
+actual external fun navigateBackJs(element: Element)
 
 /**
  * Navigate forward in browser history
@@ -35,7 +35,7 @@ external fun navigateBackJs(element: Element)
         "element.contentWindow.history.forward(); } } catch(e) { " +
         "console.error('Error going forward:', e); } }",
 )
-external fun navigateForwardJs(element: Element)
+actual external fun navigateForwardJs(element: Element)
 
 /**
  * Reload the current page
@@ -45,7 +45,7 @@ external fun navigateForwardJs(element: Element)
         "element.contentWindow.location.reload(); } } catch(e) { " +
         "console.error('Error reloading:', e); } }",
 )
-external fun reloadJs(element: Element)
+actual external fun reloadJs(element: Element)
 
 /**
  * Stop loading the current page
@@ -55,7 +55,7 @@ external fun reloadJs(element: Element)
         " element.contentWindow.stop(); } } catch(e) { " +
         "console.error('Error stopping load:', e); } }",
 )
-external fun stopLoadingJs(element: Element)
+actual external fun stopLoadingJs(element: Element)
 
 /**
  * Set the URL of an iframe
@@ -64,7 +64,7 @@ external fun stopLoadingJs(element: Element)
     "(element, url) => { try { element.src = url; } catch(e) { " +
         "console.error('Error setting URL:', e); } }",
 )
-external fun setUrlJs(
+actual external fun setUrlJs(
     element: Element,
     url: String,
 )
@@ -76,7 +76,7 @@ external fun setUrlJs(
     "(element, content) => { try { element.srcdoc = content; } catch(e) { " +
         "console.error('Error setting HTML:', e); } }",
 )
-external fun setHtmlContentJs(
+actual external fun setHtmlContentJs(
     element: Element,
     content: String,
 )
@@ -89,7 +89,7 @@ external fun setHtmlContentJs(
         " String(element.contentWindow.eval(script)) : ''; } catch(err) { " +
         "return 'Error: ' + err.message; } }",
 )
-external fun evaluateScriptJs(
+actual external fun evaluateScriptJs(
     element: Element,
     script: String,
 ): String
@@ -101,7 +101,7 @@ external fun evaluateScriptJs(
     "(iframe) => { try { return iframe.contentDocument ? iframe.contentDocument.title : null; }" +
         " catch(e) { return null; } }",
 )
-external fun getIframeTitleJs(iframe: Element): String?
+actual external fun getIframeTitleJs(iframe: Element): String?
 
 /**
  * Get the current URL from an iframe
@@ -110,13 +110,13 @@ external fun getIframeTitleJs(iframe: Element): String?
     "(iframe) => { try { return iframe.contentWindow && iframe.contentWindow.location ? " +
         "iframe.contentWindow.location.href : null; } catch(e) { return iframe.src || null; } }",
 )
-external fun getIframeUrlJs(iframe: Element): String?
+actual external fun getIframeUrlJs(iframe: Element): String?
 
 /**
  * Set a style property on an element
  */
 @JsFun("(element, property, value) => { element.style[property] = value; }")
-external fun setStyleJs(
+actual external fun setStyleJs(
     element: Element,
     property: String,
     value: String,
@@ -140,25 +140,25 @@ external fun setStyleJs(
 }
 """,
 )
-external fun addContentIdentifierJs(iframe: Element)
+actual external fun addContentIdentifierJs(iframe: Element)
 
 /**
  * Log a message to the console
  */
 @JsFun("(message) => { console.log(message); }")
-external fun consoleLogJs(message: String)
+actual external fun consoleLogJs(message: String)
 
 /**
  * Log an info message to the console
  */
 @JsFun("(message) => { console.info(message); }")
-external fun consoleInfoJs(message: String)
+actual external fun consoleInfoJs(message: String)
 
 /**
  * Log an error message to the console
  */
 @JsFun("(message) => { console.error(message); }")
-external fun consoleErrorJs(message: String)
+actual external fun consoleErrorJs(message: String)
 
 /**
  * Position an element with coordinates
@@ -171,7 +171,7 @@ external fun consoleErrorJs(message: String)
   element.style.top = y + 'px';
 }""",
 )
-external fun changeCoordinates(
+actual external fun changeCoordinates(
     element: Element,
     width: Float,
     height: Float,
@@ -188,10 +188,10 @@ external fun changeCoordinates(
   element.style.margin = '0px';
 }""",
 )
-external fun initializingElement(element: Element)
+actual external fun initializingElement(element: Element)
 
 /**
  * Request focus on an element
  */
 @JsFun("(element) => { element.focus(); }")
-external fun requestFocus(element: Element)
+actual external fun requestFocus(element: Element)

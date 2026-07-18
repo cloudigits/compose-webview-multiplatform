@@ -8,7 +8,6 @@ plugins {
     alias(libs.plugins.kotlin.serialization) apply false
     alias(libs.plugins.maven.publish) apply false
 
-    alias(libs.plugins.dokka)
     alias(libs.plugins.kotlin.atomicfu)
     alias(libs.plugins.ktlint)
 }
@@ -23,6 +22,22 @@ subprojects {
             exclude("**/generated/**")
             include("**/kotlin/**")
         }
+    }
+}
+
+allprojects {
+    plugins.withId("maven-publish") {
+        extensions.configure<PublishingExtension> {
+            repositories {
+                maven(rootProject.layout.buildDirectory.dir("mvn-repo")) {
+                    name = "localRepo"
+                }
+            }
+        }
+    }
+
+    tasks.withType<Sign>().configureEach {
+        enabled = false
     }
 }
 

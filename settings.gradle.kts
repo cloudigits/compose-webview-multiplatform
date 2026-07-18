@@ -19,7 +19,3 @@ dependencyResolutionManagement {
 }
 
 include(":webview")
-include(":sample:androidApp")
-include(":sample:desktopApp")
-include(":sample:wasmJsApp")
-include(":sample:shared")
