@@ -149,24 +149,17 @@ actual fun getIframeUrlJs(iframe: Element): String? =
     }
 
 /**
- * Set a style property on an element
- */
-actual fun setStyleJs(
-    element: Element,
-    property: String,
-    value: String,
-) {
-    element.asDynamic().style[property] = value
-}
-
-/**
  * Add a content identifier to an iframe for history tracking
  */
 actual fun addContentIdentifierJs(iframe: Element) {
     try {
         val contentWindow = iframe.asDynamic().contentWindow
         if (contentWindow != null) {
-            val uniqueId = kotlin.random.Random.nextDouble().toString().substring(2)
+            val uniqueId =
+                kotlin.random.Random
+                    .nextDouble()
+                    .toString()
+                    .substring(2)
             val state: dynamic = js("({})")
             state.id = uniqueId
             contentWindow.history.replaceState(state, "", contentWindow.location.href)
@@ -195,37 +188,4 @@ actual fun consoleInfoJs(message: String) {
  */
 actual fun consoleErrorJs(message: String) {
     console.error(message)
-}
-
-/**
- * Position an element with coordinates
- */
-actual fun changeCoordinates(
-    element: Element,
-    width: Float,
-    height: Float,
-    x: Float,
-    y: Float,
-) {
-    val style = element.asDynamic().style
-    style.width = "${width}px"
-    style.height = "${height}px"
-    style.left = "${x}px"
-    style.top = "${y}px"
-}
-
-/**
- * Initialize an element with basic styling
- */
-actual fun initializingElement(element: Element) {
-    val style = element.asDynamic().style
-    style.position = "absolute"
-    style.margin = "0px"
-}
-
-/**
- * Request focus on an element
- */
-actual fun requestFocus(element: Element) {
-    element.asDynamic().focus()
 }

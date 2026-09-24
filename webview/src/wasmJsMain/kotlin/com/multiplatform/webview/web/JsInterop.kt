@@ -113,16 +113,6 @@ actual external fun getIframeTitleJs(iframe: Element): String?
 actual external fun getIframeUrlJs(iframe: Element): String?
 
 /**
- * Set a style property on an element
- */
-@JsFun("(element, property, value) => { element.style[property] = value; }")
-actual external fun setStyleJs(
-    element: Element,
-    property: String,
-    value: String,
-)
-
-/**
  * Add a content identifier to an iframe for history tracking
  */
 @JsFun(
@@ -159,39 +149,3 @@ actual external fun consoleInfoJs(message: String)
  */
 @JsFun("(message) => { console.error(message); }")
 actual external fun consoleErrorJs(message: String)
-
-/**
- * Position an element with coordinates
- */
-@JsFun(
-    """(element, width, height, x, y) => {
-  element.style.width = width + 'px';
-  element.style.height = height + 'px';
-  element.style.left = x + 'px';
-  element.style.top = y + 'px';
-}""",
-)
-actual external fun changeCoordinates(
-    element: Element,
-    width: Float,
-    height: Float,
-    x: Float,
-    y: Float,
-)
-
-/**
- * Initialize an element with basic styling
- */
-@JsFun(
-    """(element) => {
-  element.style.position = 'absolute';
-  element.style.margin = '0px';
-}""",
-)
-actual external fun initializingElement(element: Element)
-
-/**
- * Request focus on an element
- */
-@JsFun("(element) => { element.focus(); }")
-actual external fun requestFocus(element: Element)

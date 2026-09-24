@@ -1,6 +1,6 @@
 [versions]
 agp = "8.9.3"
-compose = "1.8.0"
+compose = "1.12.1"
 kotlin = "2.4.0"
 coroutines = "1.10.2"
 voyager = "1.1.0-beta01"
@@ -18,6 +18,11 @@ ktlint = "org.jlleitschuh.gradle.ktlint:12.3.0"
 maven-publish = "com.vanniktech.maven.publish:0.34.0"
 
 [libraries]
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose" }
+compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "compose" }
+compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose" }
+compose-components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "compose" }
+compose-desktop = { module = "org.jetbrains.compose.desktop:desktop", version.ref = "compose" }
 android-activity-compose = "androidx.activity:activity-compose:1.10.1"
 android-appcompat = "androidx.appcompat:appcompat:1.7.0"
 android-webkit = "androidx.webkit:webkit:1.13.0"

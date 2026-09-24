@@ -67,15 +67,6 @@ expect fun getIframeTitleJs(iframe: Element): String?
 expect fun getIframeUrlJs(iframe: Element): String?
 
 /**
- * Set a style property on an element
- */
-expect fun setStyleJs(
-    element: Element,
-    property: String,
-    value: String,
-)
-
-/**
  * Add a content identifier to an iframe for history tracking
  */
 expect fun addContentIdentifierJs(iframe: Element)
@@ -94,24 +85,3 @@ expect fun consoleInfoJs(message: String)
  * Log an error message to the console
  */
 expect fun consoleErrorJs(message: String)
-
-/**
- * Position an element with coordinates
- */
-expect fun changeCoordinates(
-    element: Element,
-    width: Float,
-    height: Float,
-    x: Float,
-    y: Float,
-)
-
-/**
- * Initialize an element with basic styling
- */
-expect fun initializingElement(element: Element)
-
-/**
- * Request focus on an element
- */
-expect fun requestFocus(element: Element)

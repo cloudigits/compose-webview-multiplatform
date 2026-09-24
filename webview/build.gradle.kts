@@ -1,7 +1,6 @@
 @file:Suppress("UNUSED_VARIABLE", "OPT_IN_USAGE")
 
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
-import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
@@ -23,7 +22,6 @@ kotlin {
     jvm("desktop")
 
     listOf(
-        iosX64(),
         iosArm64(),
         iosSimulatorArm64(),
     ).forEach { iosTarget ->
@@ -40,29 +38,15 @@ kotlin {
 
     @OptIn(ExperimentalWasmDsl::class)
     wasmJs {
-        browser {
-            val rootDirPath = project.rootDir.path
-            val projectDirPath = project.projectDir.path
-            commonWebpackConfig {
-                devServer =
-                    (devServer ?: KotlinWebpackConfig.DevServer())
-                        .apply {
-                            static =
-                                (static ?: mutableListOf())
-                                    .apply {
-                                        add(rootDirPath)
-                                        add(projectDirPath)
-                                    }
-                        }
-            }
-        }
+        browser()
     }
 
     sourceSets {
         commonMain.dependencies {
-            implementation(compose.runtime)
-            implementation(compose.foundation)
-            implementation(compose.components.resources)
+            implementation(libs.compose.runtime)
+            implementation(libs.compose.ui)
+            implementation(libs.compose.foundation)
+            implementation(libs.compose.components.resources)
             implementation(libs.kermit)
             implementation(libs.kotlin.coroutines.core)
             implementation(libs.kotlin.serialization.json)
@@ -76,9 +60,8 @@ kotlin {
 
         iosMain.dependencies { }
 
-        val desktopMain by getting
-        desktopMain.dependencies {
-            implementation(compose.desktop.common)
+        getByName("desktopMain").dependencies {
+            implementation(libs.compose.desktop)
             api(libs.kcef)
             implementation(libs.kotlin.coroutines.swing)
         }
@@ -124,4 +107,3 @@ mavenPublishing {
     publishToMavenCentral(true)
     signAllPublications()
 }
-
