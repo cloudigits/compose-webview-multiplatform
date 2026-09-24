@@ -1,7 +1,6 @@
 package com.multiplatform.webview.web
 
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Modifier
@@ -128,12 +127,6 @@ fun WebView(
         platformWebViewParams = platformWebViewParams,
         factory = factory ?: ::defaultWebViewFactory,
     )
-
-    DisposableEffect(Unit) {
-        onDispose {
-            webViewJsBridge?.clear()
-        }
-    }
 }
 
 /**
