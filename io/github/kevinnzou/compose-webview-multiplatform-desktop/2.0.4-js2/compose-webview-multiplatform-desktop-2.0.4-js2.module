@@ -1,0 +1,179 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../compose-webview-multiplatform/2.0.4-js2/compose-webview-multiplatform-2.0.4-js2.module",
+    "group": "io.github.kevinnzou",
+    "module": "compose-webview-multiplatform",
+    "version": "2.0.4-js2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "desktopApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "dev.datlag",
+          "module": "kcef",
+          "version": {
+            "requires": "2024.04.20.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webview-desktop.jar",
+          "url": "compose-webview-multiplatform-desktop-2.0.4-js2.jar",
+          "size": 244449,
+          "sha512": "2b079251588d6f1938f782e0d0e5081a3b2cff775f8902078b2d21ae3cf49dcffdbaafe6aaf368567c796bbf42be9af152845a417d0a98b7a252ae2630aa374c",
+          "sha256": "9e6115e4c40cd238b773044f011355e1685d3886eb9a922f872f10bae1386e7b",
+          "sha1": "b486a60d125e31e5ceea99d19295e8e5a528f6ed",
+          "md5": "f5e53d1b30734229627d622ecfda8deb"
+        }
+      ]
+    },
+    {
+      "name": "desktopRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "dev.datlag",
+          "module": "kcef",
+          "version": {
+            "requires": "2024.04.20.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.desktop",
+          "module": "desktop",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-swing",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "kermit",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webview-desktop.jar",
+          "url": "compose-webview-multiplatform-desktop-2.0.4-js2.jar",
+          "size": 244449,
+          "sha512": "2b079251588d6f1938f782e0d0e5081a3b2cff775f8902078b2d21ae3cf49dcffdbaafe6aaf368567c796bbf42be9af152845a417d0a98b7a252ae2630aa374c",
+          "sha256": "9e6115e4c40cd238b773044f011355e1685d3886eb9a922f872f10bae1386e7b",
+          "sha1": "b486a60d125e31e5ceea99d19295e8e5a528f6ed",
+          "md5": "f5e53d1b30734229627d622ecfda8deb"
+        }
+      ]
+    },
+    {
+      "name": "desktopSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "webview-desktop-sources.jar",
+          "url": "compose-webview-multiplatform-desktop-2.0.4-js2-sources.jar",
+          "size": 42428,
+          "sha512": "39e6ee4c8ada76140258b6325e88615c47b6344aae8417463208d2c8032978640517c0f628a6500be9ea2fd6e2de301fc42507f40f29cd4f369cf3585d4ecfe5",
+          "sha256": "5a7db4eb939f1f01c62b938f33c316296b6aa78f083b11e5fdd8fa8e21cc142d",
+          "sha1": "c7fe074b4ead4d69c741b44c8de33b3df1e292f6",
+          "md5": "694998c33483cc1e5b0b1f9e0aa43adc"
+        }
+      ]
+    }
+  ]
+}

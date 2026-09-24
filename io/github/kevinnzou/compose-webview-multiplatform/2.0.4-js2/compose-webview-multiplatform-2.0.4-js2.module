@@ -1,0 +1,488 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.kevinnzou",
+    "module": "compose-webview-multiplatform",
+    "version": "2.0.4-js2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "kermit",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webview-metadata.jar",
+          "url": "compose-webview-multiplatform-2.0.4-js2.jar",
+          "size": 33587,
+          "sha512": "e6609ececdb355191eff1e7225eea121abfd14b6ccc8e52e0cefb4d841920de52e11567db8098cc61823a8ab514954ef0bebe0bf149c7da9c41ebe03f930e959",
+          "sha256": "7d0c47993f9f4e9f6c526632446aaafc5e1f9b91ca5984b8abbd963231c4580c",
+          "sha1": "189a33d72d0d8140c74acf90f01e833c729dcd61",
+          "md5": "17113c43c03fc7bbbe040f8096e08451"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "webview-kotlin-sources.jar",
+          "url": "compose-webview-multiplatform-2.0.4-js2-sources.jar",
+          "size": 56793,
+          "sha512": "dd55749cd324099a7b3be1db6940b62a674c71b3c00ceb606b2d4514d205b31fd1a70c4c699c4f0bb706fe3ddd6e299897c1a1bfdb626474890f754166d212ae",
+          "sha256": "13ba424a72d7c11381ab2b46d615aabee9ff1e4e6bf484eea09eb2a18c0b7a20",
+          "sha1": "5dcc9ce8856aa43b7ced81de83cd1e0cbaa39a74",
+          "md5": "1a60682aa9b80c5b498e17e646ddaf19"
+        }
+      ]
+    },
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-android/2.0.4-js2/compose-webview-multiplatform-android-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-android",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-android/2.0.4-js2/compose-webview-multiplatform-android-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-android",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-android/2.0.4-js2/compose-webview-multiplatform-android-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-android",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "desktopApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-desktop/2.0.4-js2/compose-webview-multiplatform-desktop-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-desktop",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "desktopRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-desktop/2.0.4-js2/compose-webview-multiplatform-desktop-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-desktop",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "desktopSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-desktop/2.0.4-js2/compose-webview-multiplatform-desktop-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-desktop",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-iosarm64/2.0.4-js2/compose-webview-multiplatform-iosarm64-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-iosarm64",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-iosarm64/2.0.4-js2/compose-webview-multiplatform-iosarm64-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-iosarm64",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-iosarm64/2.0.4-js2/compose-webview-multiplatform-iosarm64-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-iosarm64",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-iosarm64/2.0.4-js2/compose-webview-multiplatform-iosarm64-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-iosarm64",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-iossimulatorarm64/2.0.4-js2/compose-webview-multiplatform-iossimulatorarm64-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-iossimulatorarm64",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-iossimulatorarm64/2.0.4-js2/compose-webview-multiplatform-iossimulatorarm64-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-iossimulatorarm64",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-iossimulatorarm64/2.0.4-js2/compose-webview-multiplatform-iossimulatorarm64-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-iossimulatorarm64",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-iossimulatorarm64/2.0.4-js2/compose-webview-multiplatform-iossimulatorarm64-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-iossimulatorarm64",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-js/2.0.4-js2/compose-webview-multiplatform-js-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-js",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-js/2.0.4-js2/compose-webview-multiplatform-js-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-js",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-js/2.0.4-js2/compose-webview-multiplatform-js-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-js",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "jsResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresourcesjs",
+        "org.gradle.usage": "kotlin-multiplatformresourcesjs",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-js/2.0.4-js2/compose-webview-multiplatform-js-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-js",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-wasm-js/2.0.4-js2/compose-webview-multiplatform-wasm-js-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-wasm-js",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-wasm-js/2.0.4-js2/compose-webview-multiplatform-wasm-js-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-wasm-js",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-wasm-js/2.0.4-js2/compose-webview-multiplatform-wasm-js-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-wasm-js",
+        "version": "2.0.4-js2"
+      }
+    },
+    {
+      "name": "wasmJsResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresourcesjs",
+        "org.gradle.usage": "kotlin-multiplatformresourcesjs",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../compose-webview-multiplatform-wasm-js/2.0.4-js2/compose-webview-multiplatform-wasm-js-2.0.4-js2.module",
+        "group": "io.github.kevinnzou",
+        "module": "compose-webview-multiplatform-wasm-js",
+        "version": "2.0.4-js2"
+      }
+    }
+  ]
+}

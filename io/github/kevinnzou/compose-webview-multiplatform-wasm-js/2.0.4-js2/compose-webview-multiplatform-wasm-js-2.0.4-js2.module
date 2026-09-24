@@ -1,0 +1,246 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../compose-webview-multiplatform/2.0.4-js2/compose-webview-multiplatform-2.0.4-js2.module",
+    "group": "io.github.kevinnzou",
+    "module": "compose-webview-multiplatform",
+    "version": "2.0.4-js2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webview-wasm-js.klib",
+          "url": "compose-webview-multiplatform-wasm-js-2.0.4-js2.klib",
+          "size": 219291,
+          "sha512": "a390a96a5a114d0fdea8d86bfd837473dea53694e5bee83f65cc116ef163ed8fc67efd6c05700d303b05ee04e9ffaf2bc7df17b31791b93e1faa6a9624d93a2d",
+          "sha256": "1f4bf2b332f51a90381897df0b77682c3bd66826a21a95fa18c4063cc954e032",
+          "sha1": "0bf0f9b58307f500a50ae992c89b302d632c723c",
+          "md5": "cb643773844639105e569fd70bee0b60"
+        }
+      ]
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-browser",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "kermit",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webview-wasm-js.klib",
+          "url": "compose-webview-multiplatform-wasm-js-2.0.4-js2.klib",
+          "size": 219291,
+          "sha512": "a390a96a5a114d0fdea8d86bfd837473dea53694e5bee83f65cc116ef163ed8fc67efd6c05700d303b05ee04e9ffaf2bc7df17b31791b93e1faa6a9624d93a2d",
+          "sha256": "1f4bf2b332f51a90381897df0b77682c3bd66826a21a95fa18c4063cc954e032",
+          "sha1": "0bf0f9b58307f500a50ae992c89b302d632c723c",
+          "md5": "cb643773844639105e569fd70bee0b60"
+        }
+      ]
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "files": [
+        {
+          "name": "webview-wasm-js-sources.jar",
+          "url": "compose-webview-multiplatform-wasm-js-2.0.4-js2-sources.jar",
+          "size": 47933,
+          "sha512": "30ba81c5bc81a83506ddfe5caf5158d62e17de910ab3ff38e57f4b31e5265eacdb22573bb70b95009b1898cb5de9341ec86e4d71a9f9107909855262bc7287ff",
+          "sha256": "6a9ea2121d2e4238331af6fda0abbd0cafd38780648fb59ea3c56c1e887b7425",
+          "sha1": "a9d9a91eeafd9329fe7b5dbec9000f6c2d4ad6a5",
+          "md5": "d11d89bc768b2b0a706e2d1a2c72e8a7"
+        }
+      ]
+    },
+    {
+      "name": "wasmJsResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresourcesjs",
+        "org.gradle.usage": "kotlin-multiplatformresourcesjs",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-browser",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "kermit",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webview.kotlin_resources.zip",
+          "url": "compose-webview-multiplatform-wasm-js-2.0.4-js2-kotlin_resources.kotlin_resources.zip",
+          "size": 362,
+          "sha512": "735ddaf521e370e81b244dd781006ac20e6386840aedd1c03d81e8dc1e6b97c9ca8caa6b47d0175e8b81a0a0d26d7c669a8b17ce4b4084ed34d270811594c161",
+          "sha256": "b3bca01da9c1c303094dc4f904282b760b96dc005e9fed049402e8646daa903a",
+          "sha1": "0fb997012a363c71aa791ef4b953da1f88e1c324",
+          "md5": "bd5475ef71db9a18c07223c1d048fa35"
+        }
+      ]
+    }
+  ]
+}
